@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta charset="UTF-8">
+    <title></title>
+    <base href="/hins/">
+    <link rel="stylesheet" type="text/css" href="./resources/nprogress/nprogress.css">
+    <script src="./resources/nprogress/nprogress.js"></script>
+    <link rel="stylesheet" type="text/css" href="./resources/cola-ui/semantic.css">
+    <link rel="stylesheet" type="text/css" href="./resources/cola-ui/cola.css">
+    <link rel="stylesheet" type="text/css" href="./common/common.css">
+    
+  </head>
+  <body>
+    <script type="text/javascript">
+      NProgress.configure({showSpinner: false, minimum: 0.3})
+      NProgress.start();
+    </script>
+    
+    <div class="boxul ui blue fragment fluid-layout">
+		<li>
+          <label>账户代码</label>
+             <div class="fields">
+              	<div class="field fifteen wide">
+                 	<div c-widget="input; bind:condition.accountCode;" class="mini"></div>
+               	</div>
+             </div>
+        </li>
+        <li>
+			<div >
+				<div c-widget="Button; icon:search; caption:查询; click:search; width:100" class="primary mini"
+					 style="margin: 0.3em 0 0 3em;"></div>
+			</div>
+        </li>
+    </div>  
+        
+        
+    
+    
+          
+      <div class="ui segment basic">
+  		 <div c-widget="Panel; caption:账户优先级查询结果;" style="width: 100%;">
+          <div c-widget="pager; bind:capaccounts;" class="secondary">           
+            <div class="control item">
+              <div >
+				<div c-widget="Button; icon:plus; caption:添加; click:add; width:100" class="primary mini"></div>
+			</div>
+            </div>
+            <div class="right menu">
+              <div page-code="pages" class="item"></div>
+            </div>        
+          </div>
+          
+          
+          <div id="capaccountTable" class="fused">        	
+            <template name="operations">
+              <div>
+                <div class="ui buttons icon mini">
+                  <div c-onclick="edit(item)" class="ui teal basic button"><i class="icon edit"></i></div>
+                  <div c-onclick="del(item)" class="ui orange basic button"><i class="icon trash outline"></i></div>
+                </div>
+              </div>
+            </template>         
+          </div>  
+        </div>
+      </div>
+      
+    
+    <div id="editLayer" class="default-background">
+      <div class="v-box">
+        <div class="caption-bar box"><i class="edit icon"></i><span class="caption">账户优先级信息</span>
+          <div class="tools">
+            <div c-widget="button; icon:angle right; iconPosition:right; caption:返回; click:cancel" class="basic circular"></div>
+          </div>
+        </div>
+        
+        <div class="content content-background flex-box">
+          <div class="ui padded segment basic">
+            <div class="ui time-line circular">
+              <div class="items">
+                  <div class="ui segment basic">
+                      <div class="ui form">
+                      	<div class="required field">
+							<label>业务类型</label>
+							<div id="bizTypeSelectDropDown"  class="mini"></div>
+						</div>
+						<div class="required field">
+							<label>银行号</label>
+							<div c-widget="Input; bind:entityCapAccount.bankCode;readOnly:true;"></div>
+						</div>
+						<div class="required field">
+							<label>机构号</label>
+							<div c-widget="Input; bind:entityCapAccount.instCode;readOnly:true;"></div>
+						</div>
+						<div class="field">
+							<label>优先级</label>
+							<div c-widget="Input; bind:entityCapAccount.priorityClass;"></div>
+						</div>
+						<div class="required field">
+							<label>账户代码</label>
+							<div c-widget="Input; bind:entityCapAccount.accountCode;"></div>
+						</div>
+                      	<div class="field">
+							<label>岗位描述</label>
+							<textarea c-bind="entityCapAccount.description"></textarea>
+						</div>
+					</div>
+                </div>  
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        
+        <div class="box default-background" style="padding:0.8em">
+          	<div class=" mini button primary" c-widget="button; click:ok;">确定</div>
+			<div class=" mini button secondary" c-widget="button; click:cancel">取消</div>
+         
+        </div>
+        
+      </div>
+    </div>
+  	
+  	
+  </body>
+  <script src="./resources/jquery/jquery-2.1.3.js"></script>
+  <script src="./resources/jquery/jquery.cookie.js"></script>
+  <script src="./resources/cola-ui/3rd.js"></script>
+  <script src="./resources/cola-ui/semantic.js"></script>
+  <script src="./resources/cola-ui/cola.js"></script>
+  <script src="./common/common.js"></script>
+  <script src="./frame/user/accountpriority.js"></script>
+</html>

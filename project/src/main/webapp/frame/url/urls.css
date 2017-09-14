@@ -1,0 +1,29 @@
+/* 主色调定义 */
+/* 文字内容色调定义 */
+/* 背景色调定义 */
+/* 边框色调定义 */
+/* 主题色定义 */
+/* Input */
+/* main page */
+body {
+  background-color: #f3f3f4;
+  padding: 0 0.8em;
+}
+.ui.panel > .header > .content > .tools > *:not(i) {
+    line-height: 1rem;
+}
+.ui.input {
+    width: 100%;
+}
+.ui.form .field > label {
+    display: block;
+    margin: 1em 0em 0.33333333rem 0em; 
+    color: rgba(0, 0, 0, 0.87); 
+    font-size: 0.91666667em; 
+    text-transform: none;
+}
+.ui.form .required.fields:not(.grouped) > .field > label:after, .ui.form .required.fields.grouped > label:after, .ui.form .required.field > label:after, .ui.form .required.fields:not(.grouped) > .field > .checkbox:after, .ui.form .required.field > .checkbox:after {
+	margin: -0.2em 0em 0em 0.2em;
+    content: '*';
+    color: #DB2828;
+}

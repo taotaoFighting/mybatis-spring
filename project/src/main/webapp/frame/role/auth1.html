@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta charset="UTF-8">
+    <title></title>
+    <base href="/hins/">
+    <link rel="stylesheet" type="text/css" href="./resources/nprogress/nprogress.css">
+    <script src="./resources/nprogress/nprogress.js"></script>
+    <link rel="stylesheet" type="text/css" href="./resources/cola-ui/semantic.css">
+    <link rel="stylesheet" type="text/css" href="./resources/cola-ui/cola.css">
+  </head>
+  <body>
+  <div id="SystemDropDown" c-widget="button;caption:SystemDropDown;"></div>
+  "urlTree":<div id="urlTree" c-widget="input;"></div>
+  <div id="buttont2" c-widget="button;caption:button2;display:false;click:click"></div>
+  <div id="input2" c-widget="input;readOnly:true;"></div>
+  <div id="button3" c-widget="button;caption:button;"></div>
+  <div id="input3"></div> 
+  </body>
+  <script src="../resources/jquery/jquery-2.1.3.js"></script>
+  <script src="../resources/jquery/jquery.cookie.js"></script>
+  <script src="../resources/cola-ui/3rd.js"></script>
+  <script src="../resources/cola-ui/semantic.js"></script>
+  <script src="../resources/cola-ui/cola.js" charset="UTF-8"></script>
+  <script src="../common/common.js"></script>
+  <script type="text/javascript">
+	  cola(function(model) {
+		  model.widgetConfig({
+				button3: {
+					$type: "button",
+					caption: "按钮"
+				},
+				input3: {
+					$type: "input"
+				}
+			});
+		  var url="/frame/url/urls.html";
+		  var data={
+				url:url,
+				ids:['SystemDropDown','input2']
+		  };
+		     /*  如果ids为空，则设置页面中所有具有id组件的权限,默认无权限；推荐传入url参数 */
+		  App.resetComponentAuth(data);
+	  });
+  </script>
+</html>

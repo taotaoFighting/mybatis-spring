@@ -1,0 +1,23 @@
+/* 涓昏壊璋冨畾涔� */
+/* 鏂囧瓧鍐呭鑹茶皟瀹氫箟 */
+/* 鑳屾櫙鑹茶皟瀹氫箟 */
+/* 杈规鑹茶皟瀹氫箟 */
+/* 涓婚鑹插畾涔� */
+/* Input */
+/* main page */
+body {
+  background-color: #f3f3f4;
+  padding: 0 0.8em;
+}
+.ui.panel > .header > .content > .tools > *:not(i) {
+    line-height: 1rem;
+}
+.panelsave.button {
+    margin-right: -3px;
+}
+.ui.panel > .header > .content > .tools > * {
+    color: #1b1c1d;
+}
+.ui.button.panelsave> .icon {
+    margin-top: -8px;
+}

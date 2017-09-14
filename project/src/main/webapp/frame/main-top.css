@@ -1,0 +1,470 @@
+/* 主色调定义 */
+/* 文字内容色调定义 */
+/* 背景色调定义 */
+/* 边框色调定义 */
+/* 主题色定义 */
+/* Input */
+/* main page */
+html body {
+  font-size: 14px !important;
+}
+#loginDialog {
+  border-radius: 0.7571429rem;
+}
+#loginDialog #containerSignIn {
+  border-radius: 0.7571429rem;
+  margin: 0;
+  padding: 2em 2em 1em 2em;
+}
+#loginDialog #containerSignIn h2 {
+  margin: 0 0 25px;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  color: #323a45;
+}
+#loginDialog #containerSignIn .ui.form > .field:not(:last-child) {
+  margin-bottom: 1.6em;
+}
+#loginDialog #containerSignIn .ui.form a.float-right {
+  float: right;
+}
+#loginDialog #containerSignIn .ui.form .submit-btn {
+  margin-top: 1em;
+}
+.page-header {
+  height: 60px;
+  background-color: #18a689;
+  padding: 0 10px;
+}
+.page-header > * {
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  height: 100%;
+  display: -ms-flexbox;
+  -ms-flex-wrap: nowrap;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.page-header > *.brand img {
+  height: 40px;
+  width: auto;
+}
+.page-header > *.brand span {
+  margin-left: 10px;
+  font-size: 1.4em;
+  color: #fff;
+}
+.page-header > *.box.right {
+  margin: 0 !important;
+  float: right;
+}
+.page-header > *.box.right i {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.page-header > *.box.right .item.msg {
+  padding-right: 0.52857143em;
+  padding-left: 0.52857143em;
+  position: relative;
+}
+.page-header > *.box.right .item.msg span.badge {
+  border-radius: 3px;
+  position: relative;
+  top: -8px;
+  left: 2px;
+  font-size: 0.8em;
+  padding: 0.2em 0.2em 0.1em 0.2em;
+  min-width: 16px;
+  text-align: center;
+  display: inline-block;
+  font-weight: 400;
+  background-color: #e59f52;
+  color: rgba(255, 255, 255, 0.9);
+}
+.page-header > *.box.right .item.msg span.badge.basic {
+  background-color: #fff;
+  border: 1px solid #e59f52;
+  color: #e59f52;
+}
+.page-header > *.box.right .item.msg.mail span.badge {
+  background-color: #2f886e;
+}
+.page-header > *.box.right .item.msg.mail span.badge.basic {
+  border: 1px solid #2f886e;
+  color: #2f886e;
+}
+.page-header .top-menu {
+  overflow: hidden;
+}
+.page-header .top-menu a {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+  float: left;
+  cursor: pointer;
+  height: 60px;
+  align-items: center;
+  padding: 0 22px;
+}
+.page-header .top-menu a.current,
+.page-header .top-menu a:hover {
+  background-color: #0e6352;
+}
+.page-header .top-menu a > span {
+  line-height: 60px;
+}
+.page-header .top-menu a > i {
+  margin-right: 0.4em;
+  font-size: 1.25em;
+}
+#viewTab {
+  padding: 0.8em 0 0 0.8em;
+}
+#viewTab > .tab-bar {
+  background-color: transparent;
+  height: 36px;
+  overflow: visible;
+}
+#viewTab > .tab-bar > .tabs > .tab-button {
+  position: relative;
+  overflow: visible;
+  padding: 0 1em 0 1.25em;
+  background-color: #f7f7fa;
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.0980392156862745);
+  -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.0980392156862745);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.0980392156862745);
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  line-height: 36px;
+  font-size: 0.92em;
+  margin-right: 4px;
+  border-right: none;
+}
+#viewTab > .tab-bar > .tabs > .tab-button > .close-btn i {
+  font-family: iconfont !important;
+}
+#viewTab > .tab-bar > .tabs > .tab-button > .close-btn i:before {
+  content: "\e60d";
+}
+#viewTab > .tab-bar > .tabs > .tab-button.active {
+  background-color: #fff;
+  position: relative;
+  overflow: visible;
+}
+#viewTab > .tab-bar > .tabs > .tab-button.active .caption span {
+  color: #000;
+}
+#viewTab > .tab-bar > .tabs > .tab-button.active:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4px;
+  content: "";
+  bottom: 0px;
+  z-index: 1;
+  background-color: #fff;
+}
+#viewTab > .tab-bar > .tabs > .tab-button:hover {
+  background-color: #fff;
+}
+#viewTab > .contents {
+  padding: 0;
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.0980392156862745);
+  -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.0980392156862745);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.0980392156862745);
+  background-color: #fff;
+}
+#viewTab > .contents .item {
+  height: 100%;
+}
+#viewTab > .contents .item > * {
+  height: inherit;
+}
+#subMenuLayer {
+  overflow: hidden;
+  width: 16em;
+  -webkit-transition: width 0.2s ease-out;
+  -moz-transition: width 0.2s ease-out;
+  -o-transition: width 0.2s ease-out;
+  transition: width 0.2s ease-out;
+}
+#subMenuLayer > .v-box > .title {
+  height: 65px;
+  padding: 1em;
+  background-color: #D9DEE4;
+  line-height: 2.7em;
+  color: #000000;
+}
+#subMenuLayer > .v-box > .title i {
+  font-size: 1.2em;
+  margin-right: 0.6em;
+  color: #000000;
+}
+#subMenuLayer #subMenuTree {
+  background-color: #f3f3f4;
+}
+#subMenuLayer #subMenuTree .child-nodes {
+  overflow: visible;
+  margin-left: 1.8em !important;
+}
+#subMenuLayer .tree.item {
+  background-color: #fbfbfb;
+}
+#subMenuLayer .tree.node > .expand-button {
+  width: 1.2em;
+}
+#subMenuLayer .tree.node > .node-content > i {
+  position: absolute;
+  color: #aeb9c2;
+  width: 1.4em;
+  text-align: center;
+}
+#subMenuLayer .tree.node > .node-content > span {
+  margin-left: 1.8em;
+  font-size: 0.95em;
+}
+#subMenuLayer.collapsed {
+  width: 1.2em;
+}
+#subMenuLayer.collapsed > .title > * {
+  display: none;
+}
+#subMenuLayer.collapsed #subMenuTree {
+  display: none;
+}
+#subMenuLayer #subMenuNavbar {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  right: 0;
+  height: 48px;
+  margin-top: -24px;
+  background-color: transparent;
+  width: 12px;
+  padding: 12px 0;
+}
+#subMenuLayer #subMenuNavbar:hover {
+  width: 14px;
+}
+#subMenuLayer #subMenuNavbar > div {
+  display: inline-block;
+  height: 24px;
+  padding-top: 2px;
+  padding-left: 2px;
+  background-color: #ffffff;
+  color: #314253;
+}
+#subMenuLayer #subMenuNavbar > div:before {
+  position: absolute;
+  right: 0;
+  content: "";
+  width: 0;
+  top: 0px;
+  left: 0px;
+  height: 0;
+  border-bottom: 12px solid #ffffff;
+  border-left: 14px solid transparent;
+}
+#subMenuLayer #subMenuNavbar > div:after {
+  position: absolute;
+  content: "";
+  left: 0px;
+  width: 0;
+  height: 0;
+  bottom: 0px;
+  border-top: 12px solid #ffffff;
+  border-left: 14px solid transparent;
+}
+#subMenuLayer #subMenuNavbar > div i {
+  line-height: 24px;
+}
+#rightContainer {
+  position: relative;
+  background-color: rgba(232, 236, 239, 0.49803922);
+}
+#rightContainer .layer-dimmer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  content: "";
+  background-color: transparent;
+  z-index: 60;
+  display: none;
+}
+#rightContainer.lock .layer-dimmer {
+  display: block;
+}
+#userSidebar {
+  width: 16em;
+  left: auto;
+  background-color: #314253;
+}
+#userSidebar .box {
+  padding: 3em 1em;
+}
+#userSidebar .ui.segment.basic-info {
+  background-color: transparent;
+}
+#userSidebar .ui.segment.basic-info > .avatar {
+  display: inline-block;
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  border-radius: 50%;
+}
+#userSidebar .ui.segment.basic-info .name {
+  margin-top: 0.5em;
+  line-height: 2em;
+  color: rgba(255, 255, 255, 0.8);
+}
+#userSidebar .flex-box a.msg {
+  cursor: pointer;
+  font-size: 0.8em;
+  padding: 0 0.5em;
+  color: rgba(255, 255, 255, 0.8);
+}
+#userSidebar .flex-box a.msg i.icon.alarm {
+  color: #d93e50;
+}
+#userSidebar .flex-box a.msg i.icon.mail {
+  color: #18a689;
+}
+#userSidebar .sign-out-btn {
+  box-shadow: 0px 0px 0px 1px #18a689 inset !important;
+  color: #18a689 !important;
+}
+.main-menu.ui.segment.inverted {
+  -webkit-transition: width 0.2s ease-out;
+  -moz-transition: width 0.2s ease-out;
+  -o-transition: width 0.2s ease-out;
+  transition: width 0.2s ease-out;
+  padding: 0;
+  background-color: #293846;
+  width: 14em;
+  overflow: hidden;
+}
+.main-menu.ui.segment.inverted .bar {
+  line-height: 2em;
+  background-color: #314253;
+  text-align: center;
+  cursor: pointer;
+}
+.main-menu.ui.segment.inverted .bar i {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.7);
+}
+.main-menu.ui.segment.inverted.collapsed {
+  width: 3em;
+}
+.main-menu.ui.segment.inverted.collapsed .bar i {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.main-menu.ui.segment.inverted.collapsed #frameworkSidebar > .item > .title .dropdown-icon {
+  display: none;
+}
+.main-menu.ui.segment.inverted #frameworkSidebar {
+  padding: 0;
+  width: 14em;
+}
+.main-menu.ui.segment.inverted #frameworkSidebar > .item ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.main-menu.ui.segment.inverted #frameworkSidebar > .item > .title {
+  background-color: #1a232c;
+}
+.main-menu.ui.segment.inverted #frameworkSidebar > .item > .content {
+  padding: 0;
+}
+.main-menu.ui.segment.inverted #frameworkSidebar > .item > .content .content {
+  padding: 0 0 0 1em;
+}
+.main-menu.ui.segment.inverted #frameworkSidebar > .item > .title,
+.main-menu.ui.segment.inverted #frameworkSidebar > .item .menu-item {
+  position: relative;
+  white-space: nowrap;
+  cursor: pointer;
+  padding: 0;
+  line-height: 2.5em;
+}
+.main-menu.ui.segment.inverted #frameworkSidebar > .item > .title .dropdown-icon,
+.main-menu.ui.segment.inverted #frameworkSidebar > .item .menu-item .dropdown-icon {
+  position: absolute;
+  right: 0.8em;
+  top: 50%;
+  width: 1rem;
+  -webkit-transform: scale(0.8, 0.8);
+  -moz-transform: scale(0.8, 0.8);
+  -ms-transform: scale(0.8, 0.8);
+  -o-transform: scale(0.8, 0.8);
+  transform: scale(0.8, 0.8);
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  -moz-transition: -moz-transform 0.2s ease-out;
+  -o-transition: -o-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+  margin-top: -0.6rem;
+  line-height: 1.2rem;
+  display: inline-block;
+}
+.main-menu.ui.segment.inverted #frameworkSidebar > .item > .title:hover,
+.main-menu.ui.segment.inverted #frameworkSidebar > .item .menu-item:hover,
+.main-menu.ui.segment.inverted #frameworkSidebar > .item > .title.current-item,
+.main-menu.ui.segment.inverted #frameworkSidebar > .item .menu-item.current-item {
+  background-color: #314253;
+}
+.main-menu.ui.segment.inverted #frameworkSidebar > .item > .title:hover:before,
+.main-menu.ui.segment.inverted #frameworkSidebar > .item .menu-item:hover:before,
+.main-menu.ui.segment.inverted #frameworkSidebar > .item > .title.current-item:before,
+.main-menu.ui.segment.inverted #frameworkSidebar > .item .menu-item.current-item:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 3px;
+  background-color: #18a689;
+  bottom: 0;
+}
+.main-menu.ui.segment.inverted #frameworkSidebar > .item > .title > i,
+.main-menu.ui.segment.inverted #frameworkSidebar > .item .menu-item > i {
+  position: absolute;
+  color: #aeb9c2;
+  width: 3em;
+  text-align: center;
+}
+.main-menu.ui.segment.inverted #frameworkSidebar > .item > .title > i:before,
+.main-menu.ui.segment.inverted #frameworkSidebar > .item .menu-item > i:before {
+  font-size: 20px;
+}
+.main-menu.ui.segment.inverted #frameworkSidebar > .item > .title > span,
+.main-menu.ui.segment.inverted #frameworkSidebar > .item .menu-item > span {
+  margin-left: 3.5em;
+  font-size: 0.85em;
+  color: rgba(255, 255, 255, 0.7);
+}
+.main-menu.ui.segment.inverted #frameworkSidebar > .item > .title.active .dropdown-icon {
+  -webkit-transform: rotate(-90deg) scale(0.8, 0.8);
+  -moz-transform: rotate(-90deg) scale(0.8, 0.8);
+  -ms-transform: rotate(-90deg) scale(0.8, 0.8);
+  -o-transform: rotate(-90deg) scale(0.8, 0.8);
+  transform: rotate(-90deg) scale(0.8, 0.8);
+}
+.main-menu.ui.segment.inverted #frameworkSidebar > .item > .content .menu-item.current-item .dropdown-icon {
+  -webkit-transform: rotate(-90deg) scale(0.8, 0.8);
+  -moz-transform: rotate(-90deg) scale(0.8, 0.8);
+  -ms-transform: rotate(-90deg) scale(0.8, 0.8);
+  -o-transform: rotate(-90deg) scale(0.8, 0.8);
+  transform: rotate(-90deg) scale(0.8, 0.8);
+}

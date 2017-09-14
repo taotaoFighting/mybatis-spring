@@ -1,0 +1,87 @@
+/* 主色调定义 */
+/* 文字内容色调定义 */
+/* 背景色调定义 */
+/* 边框色调定义 */
+/* 主题色定义 */
+/* Input */
+/* main page */
+.account-page {
+	background: url("../../resources/images/bg.jpg") 50% 50% / cover no-repeat fixed;
+}
+/*#containerSignIn {
+	height: 60%;
+}
+#formSignIn {
+	height: 100%;
+}
+*/
+#containerSignIn .input-width {
+	width: 100%;
+}
+#containerSignIn input {
+	margin: 0 0 8px 0;
+}
+.ui.c-tab.top-tab > contents > content {
+	top: 10px;
+}
+.account-page > .flex-box > div > .ui.segment {
+  border-radius: 0.7571429rem;
+  padding: 2em 3em;
+  position: absolute;
+  top: 40%;
+  margin-top: -12.5em;
+  left: 50%;
+  width: 34em;
+  margin-left: -17em;
+}
+form-layout > fields > field {
+	display: block;
+}
+.login-error {
+    background-color: #FFF6F6;
+    border-color: #E0B4B4;
+    color: #9F3A38;
+    box-shadow: none;
+}
+.account-page > .flex-box > div > .ui.segment .ui.form a.float-right {
+  float: right;
+}
+.account-page > .flex-box > div > .ui.segment .ui.form .submit-btn {
+  margin-top: 1em;
+}
+.ui.icon.input > i.icon {
+    cursor: default;
+    position: absolute;
+    line-height: 1;
+    text-align: center;
+    top: 0px;
+   	left: 0px;
+    margin: 0em;
+    height: 100%;
+    width: 2.67142857em;
+    opacity: 0.5;
+    border-radius: 0em 4px 4px 0em;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+}
+.ui.icon.input input {
+    padding-left: 2.67142857em !important;
+}
+
+.cardItem{
+	line-height: 20px;
+	width: 33.3%;
+	text-align: center;
+	border-right: solid 1px #E8E8E8;
+}
+.border-left{
+	border-left: solid 1px #E8E8E8;
+}
+.tangle{
+    width: 7px;
+    height: 7px;
+    top: 83px;
+    left: 28.5%;
+    position: absolute;
+	-webkit-transform: rotate(45deg);
+}

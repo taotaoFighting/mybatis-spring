@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>登录</title>
+<base href="/hins/">
+    <link rel="stylesheet" type="text/css" href="./resources/nprogress/nprogress.css">
+    <script src="./resources/nprogress/nprogress.js"></script>
+    <link rel="stylesheet" type="text/css" href="./resources/cola-ui-1.8/semantic-blue.css">
+    <link rel="stylesheet" type="text/css" href="./resources/cola-ui-1.8/cola-blue.css">
+    <link rel="stylesheet" type="text/css" href="./common/common.css">
+    <link rel="stylesheet" type="text/css" href="./frame/account/login.css">
+</head>
+<body c-onkeyup="autoLogin()">
+	<script type="text/javascript">
+      NProgress.configure({showSpinner: false, minimum: 0.3})
+      NProgress.start();
+    </script>
+    
+	<div class="v-box account-page">
+      <div class="flex-box">
+        <div>
+          <div id="containerSignIn" c-widget="segment;" class="ui segment">
+          	<c-corner c-widget="Corner; icon:qrcode; class:gray" c-onclick="showHideQrcode()"></c-corner>
+            <div id="formSignIn" c-widget="form" class="ui form">
+        	  <div class="item logo header"><img src="./resources/images/login/picc.png" class="ui image" style="margin: 0 auto; padding-bottom: 10px;"></div>
+        	  <div class="box" style="width: 100%;height: 100%;">
+							<div class="tangle primary-background"></div>
+							<div class="box" style="height: 20px;">
+								<div class="h-box" style="width: 60%;height: 100%;margin: 0 auto;background-color: white;">
+									<a id="item-0" class="cardItem primary-text border-left" c-onclick="itemClick($dom)">个人用户</a>
+									<a id="item-1" class="cardItem black-text" c-onclick="itemClick($dom)">专业人员</a>
+									<a id="item-2" class="cardItem black-text" c-onclick="itemClick($dom)">签约机构</a>
+								</div>
+							</div>
+							<c-carousel id="carousel" display="true" height="100%" style="padding-top: 10px;">
+							  <div class="items-wrap">
+							   	<div>
+							   		<div class="box">
+							   			<form-layout>
+						    			  <fields>
+						    			  	<c-input class="large input-width" icon="laptop left" placeholder="公司机构代码" postOnInput="true" bind="companyOrgcode"></c-input>
+						    			  </fields>
+								    	  <fields>
+						    					<c-input class="large input-width" icon="user left" placeholder="用户名/手机" postOnInput="true" bind="userName"></c-input>
+										    </fields>
+										  	<fields>
+							    				<c-input class="large input-width" icon="lock left" placeholder="密码" inputType="password" postOnInput="true" bind="password"></c-input>
+											  </fields>
+											  <fields>
+													<c-button caption="登录" click="signIn" tabindex="0" class="large fluid primary submit-btn"></c-button>
+											  </fields>
+											  <fields style="margin-top:15px">
+												  <div class="h-box">
+												  	<span class="black-text">还没有账号</span>
+												  	<a href="#" style="padding-left: 4px;">立即注册</a>
+												  	<a href="./frame/account/forgot-password" class="float-right gray" style="margin-left: 170px;">忘记密码</a>
+												  </div>
+											  </fields>
+										</form-layout>
+							   		</div>
+							   	</div>
+							   	<!--
+                                   	作者：942073620@qq.com
+                                   	时间：2017-08-29
+                                   	描述：专业人员
+                                   -->
+							    <div></div>
+							    <!--
+                                	作者：942073620@qq.com
+                                	时间：2017-08-29
+                                	描述：签约机构
+                                -->
+							    <div></div>
+							  </div>
+							</c-carousel>
+						</div>
+             <!--<c-tab id="tabControl" style="min-height: 280px;">
+				<nav>
+				    <tabs>
+				        <tab name="individualUsers" id="individualUsers" caption="个人用户" class="active"></tab>
+				        <tab name="professionalStaff" id="professionalStaff" caption="专业人员"></tab>
+				        <tab name="contractor" id="contractor" caption="签约机构"></tab>
+				    </tabs>
+				</nav>
+				<contents>
+				    <content name="individualUsers" class="active">
+		    			<form-layout>
+		    			  <fields>
+		    			  	<c-input class="large input-width" icon="laptop left" placeholder="公司机构代码" postOnInput="true" bind="companyOrgcode"></c-input>
+		    			  </fields>
+				    	  <fields>
+		    				<c-input class="large input-width" icon="user left" placeholder="用户名/手机" inputType="password" postOnInput="true" bind="userName"></c-input>
+						  </fields>
+						  <fields>
+		    				<c-input class="large input-width" icon="lock left" placeholder="密码" inputType="password" postOnInput="true" bind="password"></c-input>
+						  </fields>
+						  <fields>
+							<c-button caption="登录" click="signIn" tabindex="0" class="large fluid blue submit-btn"></c-button>
+						  </fields>
+						  <fields class="cols-2" style="margin-top:20px">
+							<field>
+							  <lable><span>还没有账号</span><a href="#" style="padding-left: 4px;">立即注册</a></lable>
+						    </field>
+						    <field>
+							  <a href="./frame/account/forgot-password" class="float-right gray">忘记密码</a>
+							</field>
+						  </fields>
+						</form-layout>
+				    </content>
+				    <content name="professionalStaff">
+				    </content>
+				    <content name="contractor">
+				    </content>
+				</contents>
+			  </c-tab>-->
+			  
+							  <div class="ui message error login-error"></div>
+							  
+							  <div id="qrcode" c-widget="segment; display: false" class="ui segment">
+							  	二维码
+							  </div>
+			  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+<script src="./resources/jquery/jquery-2.1.3.js"></script>
+<script src="./resources/jquery/jquery.cookie.js"></script>
+<script src="./resources/cola-ui-1.8/3rd.js"></script>
+<script src="./resources/cola-ui-1.8/semantic.js"></script>
+<script src="./resources/cola-ui-1.8/cola.js"></script>
+<script src="./common/common.js"></script>
+<script src="./frame/account/login.js"></script>
+</html>
